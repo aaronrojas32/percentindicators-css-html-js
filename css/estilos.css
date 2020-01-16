@@ -1,6 +1,6 @@
 *
 {
-	font-family: Arial;
+	font-family: Arial;/*Tipo de letra de la página*/
 	margin: 0;
 	padding: 0;
 
@@ -8,14 +8,14 @@
 
 body
 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	background: #101010;
+	display: flex;/*Importante!!!!!NO CHANGE/NO CAMBIAR*/
+	justify-content: center;/*Importante!!!!!NO CHANGE/NO CAMBIAR*/
+	align-items: center;/*Importante!!!!!NO CHANGE/NO CAMBIAR*/
+	min-height: 100vh;/*Importante!!!!!NO CHANGE/NO CAMBIAR*/
+	background: #101010;/*color de fondo*/
 }
 
-.container
+.container/*Importante!!!!!NO CHANGE/NO CAMBIAR*/
 {
 	position: relative;
 	width: 900px;
@@ -23,7 +23,7 @@ body
 	justify-content: space-around;
 }
 
-.container .card
+.container .card/*Importante!!!!!NO CHANGE/NO CAMBIAR*/
 {
 	position: relative;
 	width: 250px;
@@ -35,14 +35,14 @@ body
 	border-radius: 4px;
 	text-align: center;
 	overflow: hidden;
-	transition: 1s;
+	transition: 1s;/*Ajustar la velocidad de la animacion*//*Si se cambia una, se recomienda cambiar todas*/
 }
-.container .card:hover
+.container .card:hover/*Importante!!!!!NO CHANGE/NO CAMBIAR*/
 {
 	transform: translateY(-10px);
 	box-shadow: 0 15px 35px rgba(0,0,0,.5);
 }
-.container .card:before
+.container .card:before/*Importante!!!!!NO CHANGE/NO CAMBIAR*/
 {
 	content: '';
 	position: absolute;
@@ -55,7 +55,7 @@ body
 	z-index: 1;
 }
 
-.percent
+.percent/*Importante!!!!!NO CHANGE/NO CAMBIAR*/
 {
 	position: relative;
 	width: 150px;
@@ -67,7 +67,7 @@ body
 
 }
 
-.percent .number
+.percent .number/*Importante!!!!!NO CHANGE/NO CAMBIAR*/
 {
 	position: absolute;
 	top: 0;
@@ -80,34 +80,34 @@ body
 	border-radius: 50%;
 }
 
-.percent .number h2
+.percent .number h2/*Importante!!!!!NO CHANGE/NO CAMBIAR*/
 {
 	color: #777;
 	font-weight: 700;
 	font-size: 40px;
-	transition: 1s;
+	transition: 1s;/*Ajustar la velocidad de la animacion*//*Si se cambia una, se recomienda cambiar todas*/
 }
 
-.card:hover .percent .number h2
+.card:hover .percent .number h2/*Importante!!!!!NO CHANGE/NO CAMBIAR*/
 {
 	color: #fff;
 	font-size: 60px;
 
 }
 
-.percent .number h2 span
+.percent .number h2 span/*Importante!!!!!NO CHANGE/NO CAMBIAR*/
 {
 	font-size: 24px;
 	color: #777;
 	
 }
 
-.card:hover .percent .number h2 span
+.card:hover .percent .number h2 span/*Importante!!!!!NO CHANGE/NO CAMBIAR*/
 {
 	color: #fff;
 }
 
-.text
+.text/*Importante!!!!!NO CHANGE/NO CAMBIAR*/
 {
 	position: relative;
 	color: #777;
@@ -116,7 +116,7 @@ body
 	font-size: 18px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
-	transition: 1s;
+	transition: 1s;/*Ajustar la velocidad de la animacion*//*Si se cambia una, se recomienda cambiar todas*/
 }
 
 .card:hover .text
@@ -124,7 +124,7 @@ body
 	color: #fff;
 }
 
-svg
+svg/*Importante!!!!!NO CHANGE/NO CAMBIAR*/
 {
 	position: relative;
 	width: 150px;
@@ -132,7 +132,7 @@ svg
 	z-index: 1000;
 }
 
-svg circle
+svg circle/*Importante!!!!!NO CHANGE/NO CAMBIAR*/
 {
 	width: 100%;
 	height: 100%;
@@ -143,24 +143,24 @@ svg circle
 	transform: translate(5px,5px);
 }
 
-svg circle:nth-child(2)
+svg circle:nth-child(2)/*Importante!!!!!NO CHANGE/NO CAMBIAR*/
 {
 	stroke-dasharray: 440;
 	stroke-dashoffset: 440;
 }
 
-.card:nth-child(1) svg circle:nth-child(2)
+.card:nth-child(1) svg circle:nth-child(2)/*Importante!!!!!NO CHANGE/NO CAMBIAR*/
 {
 	stroke: #00ff43;
-	stroke-dashoffset: calc(440 - (440 * 90) / 100);
+	stroke-dashoffset: calc(440 - (440 * 35) / 100);/*Cambiar el 35 para cambiar el porcentaje del núemro*/
 }
-.card:nth-child(2) svg circle:nth-child(2)
+.card:nth-child(2) svg circle:nth-child(2)/*Importante!!!!!NO CHANGE/NO CAMBIAR*/
 {
 	stroke: #00a1ff;
-	stroke-dashoffset: calc(440 - (440 * 85) / 100);
+	stroke-dashoffset: calc(440 - (440 * 65) / 100);/*Cambiar el 65 para cambiar el porcentaje del núemro*/
 }
-.card:nth-child(3) svg circle:nth-child(2)
+.card:nth-child(3) svg circle:nth-child(2)/*Importante!!!!!NO CHANGE/NO CAMBIAR*/
 {
 	stroke: #ff04f7;
-	stroke-dashoffset: calc(440 - (440 * 10) / 100);
+	stroke-dashoffset: calc(440 - (440 * 0) / 100);/*Cambiar el 0 para cambiar el porcentaje del núemro*/
 }
